@@ -1,2 +1,2 @@
 # INTERNPEDIA
-I complete Project task using html css.
+I complete multiple Project task using html css.
