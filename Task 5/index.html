@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="bg-btn" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <form>
+                <div class="show">
+                    <input type="text" name="show">
+                </div>
+
+                <div>
+                    <input type="button" class="bg-btn" value="C" onclick="show.value =' ' ">
+                    <input type="button" class="bg-btn" value="D"
+                        onclick="show.value = show.value.toString().slice(0,-1) ">
+                    <input type="button" class="bg-btn" value="%" onclick="show.value +='%' ">
+                    <input type="button" class="bg-btn" value="/" onclick="show.value +='/' ">
+                </div>
+                <div>
+                    <input type="button" class="bg-btn" value="7" onclick="show.value +='7' ">
+                    <input type="button" class="bg-btn" value="8" onclick="show.value +='8' ">
+                    <input type="button" class="bg-btn" value="9" onclick="show.value +='9' ">
+                    <input type="button" class="bg-btn" value="*" onclick="show.value +='*' ">
+                </div>
+                <div>
+                    <input type="button" class="bg-btn" value="4" onclick="show.value +='4' ">
+                    <input type="button" class="bg-btn" value="5" onclick="show.value +='5' ">
+                    <input type="button" class="bg-btn" value="6" onclick="show.value +='6' ">
+                    <input type="button" class="bg-btn" value="-" onclick="show.value +='-' ">
+                </div>
+                <div>
+                    <input type="button" class="bg-btn" value="1" onclick="show.value +='1' ">
+                    <input type="button" class="bg-btn" value="2" onclick="show.value +='2' ">
+                    <input type="button" class="bg-btn" value="3" onclick="show.value +='3' ">
+                    <input type="button" class="bg-btn" value="+" onclick="show.value +='+' ">
+                </div>
+                <div>
+                    <input type="button" class="bg-btn" value="00" onclick=" show.value +='00' ">
+                    <input type="button" class="bg-btn" value="0" onclick="show.value +='0' ">
+                    <input type="button" class="bg-btn" value="." onclick="show.value +='.' ">
+                    <input type="button" class="bg-btn" value="=" onclick="show.value = eval(show.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
